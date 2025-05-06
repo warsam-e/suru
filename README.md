@@ -69,9 +69,9 @@ Check out the live demo at https://warsame.me/suru.
 - **Task Management**:
   - `GET /task/list`
   - `POST /task/create`
-  - `PATCH /task/update/:id`
-  - `PATCH /task/toggle/:id`
-  - `DELETE /task/delete/:id`
+  - `PUT /task/item/:id`
+  - `PATCH /task/item/:id`
+  - `DELETE /task/item/:id`
 
 ## Frontend
 
