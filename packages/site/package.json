@@ -1,0 +1,31 @@
+{
+	"name": "@suru/site",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "3.0.8",
+		"@sveltejs/kit": "^2.20.8",
+		"@sveltejs/vite-plugin-svelte": "^5.0.3",
+		"svelte": "^5.28.2",
+		"svelte-check": "^4.1.7",
+		"typescript": "^5.8.3",
+		"vite": "^6.3.4"
+	},
+	"dependencies": {
+		"@elysiajs/eden": "^1.2.0",
+		"@suru/api": "workspace:*",
+		"@suru/core": "workspace:*",
+		"framework7-icons": "^5.0.5",
+		"sass-embedded": "^1.87.0",
+		"svelte-persisted-store": "^0.12.0"
+	}
+}

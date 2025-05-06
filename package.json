@@ -1,0 +1,16 @@
+{
+	"name": "suru",
+	"private": true,
+	"workspaces": ["packages/*"],
+	"scripts": {
+		"api:dev": "bun --cwd packages/api dev",
+		"build:api": "bun --cwd packages/api build",
+		"site:dev": "bun --cwd packages/site dev",
+		"build:site": "bun --cwd packages/site build",
+		"docker": "bun docker.ts"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4"
+	},
+	"trustedDependencies": ["@biomejs/biome", "@suru/site"]
+}

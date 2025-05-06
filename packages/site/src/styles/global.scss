@@ -1,0 +1,92 @@
+@use "./reset.scss";
+@use "./theme.scss";
+
+:root {
+	font-family:
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		"Open Sans",
+		"Helvetica Neue",
+		sans-serif;
+}
+
+html {
+	background: theme.$mantle;
+	color: theme.$text;
+}
+
+input {
+	height: 2rem;
+	padding: 0 0.8rem;
+	background: theme.$base;
+	border-radius: calc(2rem / 4.4);
+	border: unset;
+	box-shadow: inset 0 0 0 1px rgba(theme.$text, 0.05);
+}
+
+i {
+	color: theme.$text;
+}
+
+.link {
+	cursor: pointer;
+	color: theme.$mauve;
+	font-weight: 600;
+	text-decoration: none;
+	transition: opacity 0.2s ease-in-out;
+	user-select: none;
+	&:hover {
+		opacity: 0.8;
+	}
+	&:active {
+		opacity: 0.6;
+	}
+}
+
+.button {
+	height: 2.5rem;
+	border: unset;
+	padding: 0 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.8rem;
+	color: theme.$base;
+	background: theme.$mauve;
+	border-radius: calc(2.5rem / 4.4);
+}
+
+@keyframes blink {
+	50% {
+		opacity: 0.5;
+	}
+}
+.blink {
+	opacity: 0.8;
+	animation: blink 1.5s infinite;
+}
+
+.hover {
+	text-decoration: none;
+	cursor: pointer;
+	transition:
+		transform 0.2s,
+		opacity 0.2s;
+	animation: hover 0.2s infinite alternate;
+
+	&:hover {
+		transform: scale(1.01);
+		opacity: 0.7;
+	}
+
+	&:active {
+		transform: scale(0.98);
+		opacity: 0.8;
+	}
+}

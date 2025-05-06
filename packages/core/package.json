@@ -1,0 +1,15 @@
+{
+	"name": "@suru/core",
+	"private": true,
+	"main": "./lib/index.ts",
+	"type": "module",
+	"devDependencies": {
+		"@types/bun": "1.2.12"
+	},
+	"dependencies": {
+		"@octokit/rest": "21.1.1",
+		"@suru/db": "workspace:*",
+		"@suru/utils": "workspace:*",
+		"elysia": "1.2.25"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"name": "@suru/db",
+	"private": true,
+	"main": "./lib/index.ts",
+	"type": "module",
+	"devDependencies": {
+		"@types/bun": "1.2.12"
+	},
+	"dependencies": {
+		"@suru/utils": "workspace:*",
+		"pg": "^8.15.6",
+		"typeorm": "^0.3.22"
+	}
+}

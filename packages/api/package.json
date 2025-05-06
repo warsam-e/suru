@@ -1,0 +1,24 @@
+{
+	"name": "@suru/api",
+	"private": true,
+	"main": "./lib/index.ts",
+	"type": "module",
+	"scripts": {
+		"dev": "bun --watch ./lib/index.ts",
+		"build": "bun run build.ts"
+	},
+	"devDependencies": {
+		"@types/bun": "1.2.12",
+		"@types/jsonwebtoken": "^9.0.9"
+	},
+	"dependencies": {
+		"@elysiajs/bearer": "^1.2.0",
+		"@elysiajs/cors": "^1.2.0",
+		"@elysiajs/swagger": "^1.2.2",
+		"@suru/core": "workspace:*",
+		"@suru/utils": "workspace:*",
+		"elysia": "1.2.25",
+		"elysia-oauth2": "^2.0.0",
+		"jsonwebtoken": "^9.0.2"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"name": "@suru/utils",
+	"private": true,
+	"main": "./lib/index.ts",
+	"type": "module",
+	"devDependencies": {
+		"@types/bun": "1.2.12"
+	},
+	"dependencies": {
+		"dotenv": "^16.5.0"
+	}
+}
