@@ -26,4 +26,10 @@
 			font-weight: 600;
 		}
 	}
+
+	@media (max-width: 600px) {
+		nav {
+			padding: 0 2rem;
+		}
+	}
 </style>

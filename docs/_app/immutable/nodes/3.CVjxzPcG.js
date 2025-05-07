@@ -1,0 +1,1 @@
+import"../chunks/CWj6FrbW.js";import{p as t,o as a,a as e}from"../chunks/C5RO-5A5.js";import{g as p}from"../chunks/CPJWWmKl.js";import{p as s}from"../chunks/BOHu5rfS.js";import{t as m,r as n}from"../chunks/B_BkXZYI.js";function k(i,r){t(r,!0),a(()=>{let o=s.url.searchParams.get("token");return o&&m.set(o),p(n("/"))}),e()}export{k as component};

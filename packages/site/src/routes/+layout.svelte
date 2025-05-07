@@ -46,4 +46,12 @@
 			height: 100%;
 		}
 	}
+
+	@media only screen and (max-width: 820px) {
+		main {
+			> .content {
+				padding: 6rem 2rem 0;
+			}
+		}
+	}
 </style>
