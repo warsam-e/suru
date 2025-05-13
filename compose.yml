@@ -2,6 +2,7 @@ name: suru
 services:
   prod:
     container_name: suru_api_prod
+    restart: unless-stopped
     build:
       context: .
       dockerfile: Dockerfile
@@ -14,6 +15,7 @@ services:
         condition: service_healthy
   dev:
     container_name: suru_api_dev
+    restart: unless-stopped
     build:
       context: .
       dockerfile: Dockerfile
@@ -26,6 +28,7 @@ services:
         condition: service_healthy
   postgres:
     container_name: suru_db
+    restart: unless-stopped
     image: postgres:latest
     environment:
       POSTGRES_USER: suru
