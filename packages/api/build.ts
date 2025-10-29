@@ -1,4 +1,5 @@
 import { $ } from 'bun';
+
 try {
 	await $`bun build --compile ./lib/index.ts --sourcemap --outfile ../../dist/server`;
 } catch (e) {

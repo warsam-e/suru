@@ -1,6 +1,6 @@
 <script lang="ts">
-	import PopupView from "$comp/PopupView.svelte";
 	import type { SuruTask } from "@suru/core";
+	import PopupView from "$comp/PopupView.svelte";
 
 	interface Props {
 		showing: boolean;

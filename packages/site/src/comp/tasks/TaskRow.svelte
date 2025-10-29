@@ -1,13 +1,13 @@
 <script lang="ts">
+	import type { SuruTask } from "@suru/core";
 	import { suru_tasks_create } from "$lib/api";
 	import { audio_success } from "$lib/audio";
 	import {
-	    _tasks_delete,
-	    _tasks_toggle,
-	    _tasks_update,
-	    suru_init_tasks,
+		_tasks_delete,
+		_tasks_toggle,
+		_tasks_update,
+		suru_init_tasks,
 	} from "$lib/suru";
-	import type { SuruTask } from "@suru/core";
 
 	interface Props {
 		task: SuruTask;

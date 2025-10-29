@@ -1,9 +1,9 @@
-import { dev } from '$app/environment';
-import { route_link } from '$lib/routing';
-import { store_val, token, user } from '$lib/stores';
 import { type Treaty, treaty } from '@elysiajs/eden';
 import type { App } from '@suru/api';
 import type { SuruTaskCreate, SuruTaskUpdate } from '@suru/core';
+import { dev } from '$app/environment';
+import { route_link } from '$lib/routing';
+import { store_val, token, user } from '$lib/stores';
 
 const API_URL = `https://suru${dev ? '-test' : ''}.wars.studio`;
 

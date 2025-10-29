@@ -1,5 +1,5 @@
 import { cors } from '@elysiajs/cors';
-import { IS_PROD, get_env } from '@suru/utils';
+import { get_env, IS_PROD } from '@suru/utils';
 import Elysia, { ValidationError } from 'elysia';
 
 import { SWAGGER_CONF } from './conf';

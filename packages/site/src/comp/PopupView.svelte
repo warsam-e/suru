@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { overlay_count } from "$lib/stores";
 	import { onMount, type Snippet } from "svelte";
 	import { fade } from "svelte/transition";
+	import { overlay_count } from "$lib/stores";
 
 	interface Props {
 		title: string;

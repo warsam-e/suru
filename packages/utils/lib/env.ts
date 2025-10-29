@@ -1,5 +1,5 @@
-import { config } from 'dotenv';
 import { join } from 'node:path';
+import { config } from 'dotenv';
 
 export const IS_PROD = get_env('NODE_ENV', 'string') === 'production';
 

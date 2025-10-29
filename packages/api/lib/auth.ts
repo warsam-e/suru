@@ -1,4 +1,4 @@
-import { type SuruUser, github_user_by_token, suru_user } from '@suru/core';
+import { github_user_by_token, type SuruUser, suru_user } from '@suru/core';
 import { get_env, try_prom } from '@suru/utils';
 import { error } from 'elysia';
 import type { OAuth2Tokens } from 'elysia-oauth2';

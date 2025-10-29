@@ -1,6 +1,6 @@
 import type { SuruTask, SuruUser } from '@suru/core';
+import { derived, get, type Readable, writable } from 'svelte/store';
 import { persisted } from 'svelte-persisted-store';
-import { type Readable, derived, get, writable } from 'svelte/store';
 
 export const token = persisted<string | null>('suru_token', null, {
 	syncTabs: true,

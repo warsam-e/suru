@@ -1,6 +1,6 @@
+import { join } from 'node:path';
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import { join } from 'node:path';
 
 const proj_root = join(import.meta.url.replace('file://', ''), '../../..');
 

@@ -1,5 +1,5 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import { type ServerOptions, defineConfig } from 'vite';
+import { defineConfig, type ServerOptions } from 'vite';
 
 const opts: ServerOptions = {
 	host: true,
